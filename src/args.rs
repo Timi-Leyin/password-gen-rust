@@ -5,4 +5,6 @@ use clap::Parser;
 pub struct Args {
     #[arg(short, long, default_value_t = 1)]
     pub level: u16,
+    #[arg(short, long, default_value_t = 8)]
+    pub max: u16,
 }
